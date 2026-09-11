@@ -69,12 +69,12 @@ modules:
       - scons $SCONS_FLAGS $SCONS_FLAGS_EXTRA target=editor -j "$FLATPAK_BUILDER_N_JOBS"
       - install -D -m755 bin/godot.linuxbsd.editor.* /app/bin/godot
       - scons $SCONS_FLAGS $SCONS_FLAGS_EXTRA target=template_release tools=no -j "$FLATPAK_BUILDER_N_JOBS"
-      - install -Dm755 bin/godot.linuxbsd.template_release.* /app/share/godot/export_templates/4.6.3.stable/${TEMPLATE}
+      - install -Dm755 bin/godot.linuxbsd.template_release.* /app/share/godot/export_templates/4.7.2.stable/${TEMPLATE}
     cleanup: ["*"]
     sources:
       - type: archive
-        url: https://github.com/godotengine/godot/releases/download/4.6.3-stable/godot-4.6.3-stable.tar.xz
-        sha256: 2261028c0dfc10e0cf4800a5b2e5a57ea241f72965162327f5764d536a69a46a
+        url: https://github.com/godotengine/godot/releases/download/4.7.2-stable/godot-4.7.2-stable.tar.xz
+        sha256: a18ce0ccec3ecc40b0dd6c4f5132ca934e9fb7c2979717940ff32aee1eb35481
   - name: snekstudio
     buildsystem: "simple"
     build-options:
